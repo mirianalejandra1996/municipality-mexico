@@ -25,7 +25,7 @@ import DelegatesMap from '../delegates-map';
 import DelegatesHeader from '../delegates-header';
 import DelegatesBullet from '../delegates-bullet';
 import DelegatesSecurity from '../delegates-security';
-import DelegatesCategories from '../delegates-categories';
+// import DelegatesCategories from '../delegates-categories';
 import DelegatesSocialDemands from '../delegates-social-demands';
 import DelegatesPopulationCard from '../delegates-population-card';
 import DelegatesMunicipalFinances from '../delegates-municipal-finances';
@@ -186,10 +186,11 @@ export default function FirstSection() {
                   </Box>
                 </Grid>
 
+
                 {/* !=========== HEADER SECTION START ===========! */}
                 {/* This component should be absolute */}
                 {/* Cards container */}
-                <Grid item xs={12} md={9}>
+                {/* <Grid item xs={12} md={9}>
                   <Box>
                     <Grid
                       container
@@ -204,7 +205,7 @@ export default function FirstSection() {
                       </Grid>
                     </Grid>
                   </Box>
-                </Grid>
+                </Grid> */}
                 {/* !=========== HEADER SECTION END ===========! */}
               </Grid>
               {/* !=========== LOWER SECTION START ===========! */}

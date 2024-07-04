@@ -30,6 +30,8 @@ import DelegatesWinnerCard from '../delegates-winner-card';
 import DelegatesSocialDemands from '../delegates-social-demands';
 import DelegatesNumeraliaCard from '../delegates-numeralia-card';
 
+
+
 // ----------------------------------------------------------------------
 
 export default function SecondSection() {
@@ -118,7 +120,9 @@ export default function SecondSection() {
                       </Grid>
 
                       <Grid xs={12} sm={6} md={8}>
-                        <DelegatesWinnerCard sx={{ height: '200px' }} />
+                      <DelegatesWinnerCard sx={{ height: '200px' }} />
+                      {/* <DelegatesEducation sx={{ height: '200px' }} /> */}
+                      
                       </Grid>
 
                       {/* <Grid xs={12} sm={6} md={4}>
