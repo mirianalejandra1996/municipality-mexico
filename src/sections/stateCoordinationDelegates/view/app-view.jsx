@@ -28,15 +28,16 @@ export default function AppView() {
   return (
     <Container maxWidth="xl">
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={30}>
-          {/* !=========== COLUMN LEFT START ===========! */}
+      {/* <Grid container spacing={30}> */}
+      <Grid container spacing={30}>
+      {/* !=========== COLUMN LEFT START ===========! */}
           <Grid item xs={12}>
             <FirstSection/>
           </Grid>
 
 
-          {/* <Grid item sx={{marginTop: 30}} xs={12}> */}
-          <Grid item xs={12}>
+          <Grid item sx={{marginTop: 10}} xs={12}>
+          {/* <Grid item xs={12}> */}
             <SecondSection/>
           </Grid>
         </Grid>

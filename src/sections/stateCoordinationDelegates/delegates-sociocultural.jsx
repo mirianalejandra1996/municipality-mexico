@@ -78,7 +78,7 @@ export default function DelegatesSociocultural({ title, icon, sx, ...other }) {
                 className="height-fit-content text-align-center"
                 style={{ color: 'white', backgroundColor: '#941727' }}
               >
-                Votación 2024
+                Socioculturales
               </h3>
             </div>
           </div>

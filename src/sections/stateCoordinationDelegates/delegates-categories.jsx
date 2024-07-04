@@ -5,12 +5,7 @@ import { Grid } from '@mui/material';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 
-import DelegatesEducation from './delegates-winner-result';
-
-// import AppWidgetSummary from './app-widget-summary';
-// import Typography from '@mui/material/Typography';
-
-// import { fShortenNumber } from 'src/utils/format-number';
+import DelegatesEducation from './delegates-education';
 
 // ----------------------------------------------------------------------
 
