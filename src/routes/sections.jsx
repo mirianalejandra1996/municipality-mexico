@@ -24,17 +24,19 @@ export default function Router() {
         </DashboardLayout>
       ),
       children: [
-        { element: <IndexPage />, index: true },
-        { path: 'user', element: <UserPage /> },
-        { path: 'state-coordination-delegates', element: <StateCoordinationDelegates /> },
-        { path: 'products', element: <ProductsPage /> },
-        { path: 'blog', element: <BlogPage /> },
+        // { element: <IndexPage />, index: true },
+        { element: <StateCoordinationDelegates />, index: true },
+        // < />
+        // { path: 'user', element: <UserPage /> },
+        // { path: 'state-coordination-delegates', element: <StateCoordinationDelegates /> },
+        // { path: 'products', element: <ProductsPage /> },
+        // { path: 'blog', element: <BlogPage /> },
       ],
     },
-    {
-      path: 'login',
-      element: <LoginPage />,
-    },
+    // {
+    //   path: 'login',
+    //   element: <LoginPage />,
+    // },
     {
       path: '404',
       element: <Page404 />,

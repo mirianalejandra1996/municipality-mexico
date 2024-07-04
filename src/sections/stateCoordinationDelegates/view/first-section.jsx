@@ -26,6 +26,7 @@ import DelegatesHeader from '../delegates-header';
 import DelegatesBullet from '../delegates-bullet';
 import DelegatesSecurity from '../delegates-security';
 // import DelegatesCategories from '../delegates-categories';
+import DelegatesSociocultural from '../delegates-sociocultural';
 import DelegatesSocialDemands from '../delegates-social-demands';
 import DelegatesPopulationCard from '../delegates-population-card';
 import DelegatesMunicipalFinances from '../delegates-municipal-finances';
@@ -162,7 +163,7 @@ export default function FirstSection() {
 
               {/* !=========== LOWER SECTION START ===========! */}
               <Grid item container spacing={3}>
-                <Grid item xs={12} md={9}>
+                <Grid item xs={12} md={8}>
                   <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}>
                     <div className="delegate__container">
                       <DelegatesBullet
@@ -174,8 +175,8 @@ export default function FirstSection() {
                   </Box>
                 </Grid>
 
-                <Grid item xs={12} md={3}>
-                  <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}>
+                <Grid item xs={12} md={4}>
+                  {/* <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}>
                     <div className="delegate__container">
                       <DelegatesBullet
                         align="right"
@@ -183,9 +184,34 @@ export default function FirstSection() {
                         description="Ricardo López Priego"
                       />
                     </div>
-                  </Box>
-                </Grid>
+                  </Box> */}
 
+                  {/* <Box sx={{ display: "flex", backgroundColor: 'lightblue', height: '80vh' }}> */}
+                  <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}>
+                    <DelegatesSociocultural
+                      title="Seguridad"
+                      // sx={{ height: 300 }}
+                      icon={
+                        <img
+                          alt="icon"
+                          className="map__image"
+                          src="/assets/icons/glass/ic_glass_bag.png"
+                        />
+                      }
+                    />
+                  </Box>
+
+                  {/* <DelegatesSecurity
+                    title="Seguridad"
+                    icon={
+                      <img
+                        alt="icon"
+                        className="map__image"
+                        src="/assets/icons/glass/ic_glass_bag.png"
+                      />
+                    }
+                  /> */}
+                </Grid>
 
                 {/* !=========== HEADER SECTION START ===========! */}
                 {/* This component should be absolute */}
