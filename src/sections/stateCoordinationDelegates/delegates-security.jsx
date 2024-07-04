@@ -105,7 +105,7 @@ export default function DelegatesSecurity({ title, icon, sx, ...other }) {
         </StyledListItem>
         <StyledListItem secondaryAction="">
           <StyledNumber>05</StyledNumber>
-          <ListItemText primary="polícias mpales" />
+          <ListItemText primary="agentes del MP" />
         </StyledListItem>
         <StyledDivider variant="inset" component="li" />
 

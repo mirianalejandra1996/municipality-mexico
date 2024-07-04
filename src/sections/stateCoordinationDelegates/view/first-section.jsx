@@ -24,7 +24,7 @@ import DelegatesMap from '../delegates-map';
 // import DelegatesCard from '../delegates-population-card';
 import DelegatesHeader from '../delegates-header';
 import DelegatesBullet from '../delegates-bullet';
-import DelegatesPeriod from '../delegates-period';
+import DelegatesPoverty from '../delegates-poverty';
 import DelegatesSecurity from '../delegates-security';
 // import DelegatesCategories from '../delegates-categories';
 import DelegatesCategories from '../delegates-categories';
@@ -198,7 +198,7 @@ export default function FirstSection() {
                 <Grid xs={12} md={8}>
                 <Box sx={{ backgroundColor: 'lightblue', height: '90vh' }}>
 
-                  <DelegatesPeriod
+                  <DelegatesPoverty
                     sx={{ height: '100%' }}
                     title="Seguridad"
                     icon={
