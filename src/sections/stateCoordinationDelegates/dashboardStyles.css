@@ -1,0 +1,264 @@
+/*General reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.smaller {
+  font-size: 0.6rem;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* line to the right side */
+.vertical-line--right {
+  position: relative;
+}
+
+.vertical-line--right:after {
+  content: '';
+  background: #bbbdc0;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  height: 100%;
+  width: 1px;
+}
+
+.vertical-line--left {
+  position: relative;
+}
+
+.vertical-line--left:after {
+  content: '';
+  background: #bbbdc0;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  height: 100%;
+  width: 1px;
+}
+
+/* Horizontal top line */
+.horizontal-line--top {
+  position: relative;
+  padding-top: 5px;
+}
+
+.horizontal-line--top:after {
+  content: '';
+  background: #bbbdc0;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  height: 1px;
+  width: 100%;
+}
+
+.horizontal-line--bottom {
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .horizontal-line--bottom:after {
+    content: '';
+    background: #bbbdc0;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    height: 1px;
+    width: 100%;
+  }
+
+.noWrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.red {
+    color: #941727;
+}
+
+/* * ============== Header section styles start ==============*/
+
+.header__main-container {
+  background-color: blue;
+  position: relative;
+}
+
+.header__red-container {
+  position: absolute;
+  background-color: #941727;
+  color: white;
+  height: 10rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.header__municipality-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.header__municipality-name {
+  background-color: white;
+  color: gray;
+}
+
+/* * ============== Header section styles end ==============*/
+
+/* * ============== Delegate section styles start ==============*/
+
+.delegate__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3rem;
+}
+
+.delegate__bullet-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.delegate__bullet-container.right {
+  align-items: flex-end;
+}
+
+.delegate__name {
+  background-color: #fdf9cb;
+  color: black;
+}
+
+/* Usando ::before */
+.custom-bullets ul {
+  list-style: none; /* Eliminar la viñeta por defecto */
+}
+
+.custom-bullets ul li {
+  position: relative;
+  padding-left: 20px; /* Espacio para la viñeta personalizada */
+}
+
+.custom-bullets ul li::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px; /* Tamaño de la viñeta */
+  height: 5px; /* Tamaño de la viñeta */
+  background-color: #941727; /* Color de la viñeta */
+  border-radius: 50%; /* Hacerla circular */
+}
+
+
+/* * ============== Delegate section styles start ==============*/
+
+/* * ============== Map section styles start ==============*/
+
+.map__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* * ============== Map section styles end ==============*/
+
+/* * ============== Categories section styles start ==============*/
+
+.category__title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.categories__percentage-container {
+  /* background-color: red; */
+  justify-content: space-between;
+  display: flex;
+  /* gap: 5px; */
+}
+
+.categories__percentage-container.row {
+  flex-direction: row;
+}
+
+.categories__percentage-container.column {
+  flex-direction: column;
+  text-align: center;
+}
+
+.green {
+  color: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.custom-table th {
+  background-color: black;
+  color: white;
+  /* padding: 10px; */
+}
+
+.custom-table td {
+  background-color: #fdf9cb;
+  /* padding: 10px; */
+  border: 1px solid #ddd;
+}
+
+/* * ============== Categories section styles end ==============*/
