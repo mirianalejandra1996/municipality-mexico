@@ -57,8 +57,8 @@ export default function DelegatesNumeraliaCard({
 
           <Grid xs={12}>
             <div className="horizontal-line--bottom column justify-end align-end">
-              <h5 className="red">Listado nominal</h5>
-              <h2>59,783</h2>
+              <h5>Listado nominal</h5>
+              <h2 className="red">59,783</h2>
             </div>
           </Grid>
 

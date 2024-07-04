@@ -5,6 +5,7 @@ import { Grid } from '@mui/material';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 
+import DelegatesWinnerInfo from './delegates-winner-info';
 import DelegatesWinnerResult from './delegates-winner-result';
 
 // import AppWidgetSummary from './app-widget-summary';
@@ -38,16 +39,10 @@ export default function DelegatesWinnerCard({
     >
       <Grid container spacing={3} sx={{ height: '100%' }}>
         <Grid xs={12} sm={6}>
-          <DelegatesWinnerResult
-            colorSection="#006438"
-            quantity="20.15"
-            hasPercentage
-            title="Educación"
-            percentageText="Rezago educativo"
-          />
+          <DelegatesWinnerResult />
         </Grid>
         <Grid xs={12} sm={6}>
-          <DelegatesWinnerResult
+          <DelegatesWinnerInfo
             sx={{
               borderLeft: '1px solid',
               borderColor: '#BBBDC0',

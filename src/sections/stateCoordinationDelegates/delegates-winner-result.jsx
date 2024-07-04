@@ -143,3 +143,16 @@ DelegatesWinnerResult.propTypes = {
   direction: PropTypes.string,
   hasPercentage: PropTypes.bool,
 };
+
+// {/* <Grid xs={12}>
+// <div>
+//   <h3 style={{ color: 'white', backgroundColor: 'black' }}>Numeralia</h3>
+// </div>
+// </Grid>
+// <Grid xs={12}>
+// <div className="justify-end">
+// <Box sx={{ width: 40, height: 40, marginRight: '20px' }}>
+//   <img alt="icon" src="/assets/icons/glass/ic_glass_bag.png" />
+// </Box>
+// </div>
+// </Grid> */}
