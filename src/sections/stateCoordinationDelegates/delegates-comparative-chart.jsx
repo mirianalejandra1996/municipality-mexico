@@ -211,3 +211,142 @@ DelegatesComparativeChart.propTypes = {
   subheader: PropTypes.string,
   title: PropTypes.string,
 };
+
+// * Chequear
+// import React, { useEffect, useState } from 'react';
+// import PropTypes from 'prop-types';
+// import Chart from 'src/components/chart';
+
+// export default function DelegatesComparativeChart({ title, subheader, ...other }) {
+//   const [data, setData] = useState({
+//     series: [{
+//       data: []
+//     }],
+//     options: {
+//       chart: {
+//         type: 'bar',
+//         height: 350
+//       },
+//       plotOptions: {
+//         bar: {
+//           dataLabels: {
+//             position: 'top', // Mostrar las etiquetas de datos en la parte superior
+//           },
+//         }
+//       },
+//       dataLabels: {
+//         enabled: true,
+//         formatter: (val) => val,
+//         offsetY: -20,
+//         style: {
+//           fontSize: '12px',
+//           colors: ["#304758"]
+//         }
+//       },
+//       xaxis: {
+//         categories: [],
+//         position: 'bottom',
+//         labels: {
+//           offsetY: 0,
+//         },
+//         axisBorder: {
+//           show: false
+//         },
+//         axisTicks: {
+//           show: false
+//         },
+//         crosshairs: {
+//           fill: {
+//             type: 'gradient',
+//             gradient: {
+//               colorFrom: '#D8E3F0',
+//               colorTo: '#BED1E6',
+//               stops: [0, 100],
+//               opacityFrom: 0.4,
+//               opacityTo: 0.5,
+//             }
+//           }
+//         },
+//         tooltip: {
+//           enabled: true,
+//         }
+//       },
+//       yaxis: {
+//         axisBorder: {
+//           show: false
+//         },
+//         axisTicks: {
+//           show: false,
+//         },
+//         labels: {
+//           show: false,
+//           formatter: (val) => val
+//         }
+//       },
+//       annotations: {
+//         points: []
+//       }
+//     }
+//   });
+
+//   useEffect(() => {
+//     // Simulación de obtener datos desde un endpoint
+//     const fetchData = async () => {
+//       const result = await fetch('/api/your-endpoint');
+//       const json = await result.json();
+
+//       const seriesData = json.map(item => ({
+//         x: item.label,
+//         y: item.value,
+//         fillColor: item.color // Color dinámico
+//       }));
+
+//       const annotations = json.map(item => ({
+//         x: item.label,
+//         y: 0,
+//         label: {
+//           text: item.value.toString(),
+//           offsetY: 10,
+//           style: {
+//             color: item.color,
+//             background: 'transparent'
+//           }
+//         }
+//       }));
+
+//       setData({
+//         series: [{ data: seriesData }],
+//         options: {
+//           ...data.options,
+//           xaxis: {
+//             ...data.options.xaxis,
+//             categories: json.map(item => item.label)
+//           },
+//           annotations: {
+//             points: annotations
+//           }
+//         }
+//       });
+//     };
+
+//     fetchData();
+//   }, []);
+
+//   return (
+//     <div>
+//       <Chart
+//         options={data.options}
+//         series={data.series}
+//         type="bar"
+//         height={350}
+//         {...other}
+//       />
+//     </div>
+//   );
+// }
+
+// DelegatesComparativeChart.propTypes = {
+//   chart: PropTypes.object,
+//   subheader: PropTypes.string,
+//   title: PropTypes.string,
+// };
