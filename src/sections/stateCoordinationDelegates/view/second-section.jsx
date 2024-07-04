@@ -24,13 +24,26 @@ import DelegatesMap from '../delegates-map';
 // import DelegatesCard from '../delegates-population-card';
 import DelegatesHeader from '../delegates-header';
 import DelegatesBullet from '../delegates-bullet';
-import DelegatesSecurity from '../delegates-security';
+// import DelegatesSecurity from '../delegates-security';
 // import DelegatesCategories from '../delegates-categories';
+import DelegatesPeriod from '../delegates-period';
 import DelegatesWinnerCard from '../delegates-winner-card';
+// import DelegatesWinnerInfo from '../delegates-winner-info';
 import DelegatesSocialDemands from '../delegates-social-demands';
 import DelegatesNumeraliaCard from '../delegates-numeralia-card';
 
-
+// {/* <DelegatesWinnerInfo
+//             sx={{
+//               borderLeft: '1px solid',
+//               borderColor: '#BBBDC0',
+//               height: '100%',
+//             }}
+//             direction="column"
+//             colorSection="#808285"
+//             quantity="2,258"
+//             title="Vivienda"
+//             percentageText="Viviendas con hacinamiento"
+//           /> */}
 
 // ----------------------------------------------------------------------
 
@@ -72,7 +85,7 @@ export default function SecondSection() {
                 </Grid>
 
                 <Grid xs={12}>
-                  <DelegatesSecurity
+                  <DelegatesPeriod
                     title="Seguridad"
                     icon={
                       <img
@@ -82,6 +95,19 @@ export default function SecondSection() {
                       />
                     }
                   />
+
+                  {/* <DelegatesWinnerInfo
+                    sx={{
+                      borderLeft: '1px solid',
+                      borderColor: '#BBBDC0',
+                      height: '100%',
+                    }}
+                    direction="column"
+                    colorSection="#808285"
+                    quantity="2,258"
+                    title="Vivienda"
+                    percentageText="Viviendas con hacinamiento"
+                  /> */}
                 </Grid>
               </Grid>
             </Box>
@@ -120,9 +146,8 @@ export default function SecondSection() {
                       </Grid>
 
                       <Grid xs={12} sm={6} md={8}>
-                      <DelegatesWinnerCard sx={{ height: '200px' }} />
-                      {/* <DelegatesEducation sx={{ height: '200px' }} /> */}
-                      
+                        <DelegatesWinnerCard sx={{ height: '200px' }} />
+                        {/* <DelegatesEducation sx={{ height: '200px' }} /> */}
                       </Grid>
 
                       {/* <Grid xs={12} sm={6} md={4}>
@@ -154,9 +179,9 @@ export default function SecondSection() {
               {/* !=========== LOWER SECTION START ===========! */}
               <Grid item container spacing={3}>
                 <Grid item xs={12} md={9}>
-                {/* <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}> */}
-                <Box sx={{ backgroundColor: 'lightblue', height: '50vh' }}>
-                <div className="delegate__container">
+                  {/* <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}> */}
+                  <Box sx={{ backgroundColor: 'lightblue', height: '50vh' }}>
+                    <div className="delegate__container">
                       <DelegatesBullet
                         align="right"
                         title="Delegado"
@@ -183,7 +208,7 @@ export default function SecondSection() {
                   <Grid item xs={12}>
                     <DelegatesSocialDemands
                       title="Grupos / Actores políticos"
-                      sx={{ backgroundColor: '#941727'}}
+                      sx={{ backgroundColor: '#941727' }}
                       icon={
                         <img
                           alt="icon"
@@ -197,7 +222,7 @@ export default function SecondSection() {
                   <Grid item xs={12}>
                     <DelegatesSocialDemands
                       title="Situación política"
-                      sx={{ backgroundColor: '#006438'}}
+                      sx={{ backgroundColor: '#006438' }}
                       icon={
                         <img
                           alt="icon"

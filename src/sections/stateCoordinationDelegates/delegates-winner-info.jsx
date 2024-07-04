@@ -38,15 +38,6 @@ export default function DelegatesWinnerInfo({
       }}
     >
       <Grid container>
-        {/* <h3 style={{ color: 'white', backgroundColor: '#808285' }}>Numeralia</h3> */}
-        {/* <Grid xs={12}>
-          <div className="justify-end">
-            <Box sx={{ width: 40, height: 40, marginRight: '20px' }}>
-              <img alt="icon" src="/assets/icons/glass/ic_glass_bag.png" />
-            </Box>
-          </div>
-        </Grid> */}
-
         <Grid xs={12}>
           <div style={{ display: 'flex', justifyContent: 'start' }}>
             <h3 style={{ color: 'white', backgroundColor: 'black' }}>Resultados 2024</h3>

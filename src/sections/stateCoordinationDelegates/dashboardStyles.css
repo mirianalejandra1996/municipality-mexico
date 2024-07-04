@@ -42,6 +42,10 @@
   text-align: center;
 }
 
+.height-fit-content {
+    height: fit-content;
+}
+
 /* line to the right side */
 .vertical-line--right {
   position: relative;
