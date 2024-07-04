@@ -26,6 +26,7 @@ import DelegatesHeader from '../delegates-header';
 import DelegatesBullet from '../delegates-bullet';
 import DelegatesSecurity from '../delegates-security';
 // import DelegatesCategories from '../delegates-categories';
+import DelegatesCategories from '../delegates-categories';
 import DelegatesSociocultural from '../delegates-sociocultural';
 import DelegatesSocialDemands from '../delegates-social-demands';
 import DelegatesPopulationCard from '../delegates-population-card';
@@ -162,7 +163,24 @@ export default function FirstSection() {
               {/* !=========== UPPER SECTION START ===========! */}
 
               {/* !=========== LOWER SECTION START ===========! */}
-              <Grid item container spacing={3}>
+              <Grid
+                item
+                container
+                spacing={3}
+                sx={{ backgroundColor: '#20EEC9', position: 'relative' }}
+              >
+                <Grid
+                  item
+                  xs={12}
+                  md={8}
+                  sx={{ position: 'absolute', right: 0, backgroundColor: 'red' }}
+                >
+                  <DelegatesCategories />
+                </Grid>
+                {/* <div style={{position: "absolute", right: 0, backgroundColor: "red"}}>
+                    <DelegatesCategories />
+                </div> */}
+
                 <Grid item xs={12} md={8}>
                   <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}>
                     <div className="delegate__container">
@@ -176,41 +194,18 @@ export default function FirstSection() {
                 </Grid>
 
                 <Grid item xs={12} md={4}>
-                  {/* <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}>
-                    <div className="delegate__container">
-                      <DelegatesBullet
-                        align="right"
-                        title="Delegado"
-                        description="Ricardo López Priego"
-                      />
-                    </div>
-                  </Box> */}
-
-                  {/* <Box sx={{ display: "flex", backgroundColor: 'lightblue', height: '80vh' }}> */}
-                  <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}>
-                    <DelegatesSociocultural
-                      title="Seguridad"
-                      // sx={{ height: 300 }}
-                      icon={
-                        <img
-                          alt="icon"
-                          className="map__image"
-                          src="/assets/icons/glass/ic_glass_bag.png"
-                        />
-                      }
-                    />
+                  <Box
+                    sx={{
+                      backgroundColor: 'lightblue',
+                      height: '80vh',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'flex-end',
+                    }}
+                  >
+                    {/* <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}> */}
+                    <DelegatesSociocultural />
                   </Box>
-
-                  {/* <DelegatesSecurity
-                    title="Seguridad"
-                    icon={
-                      <img
-                        alt="icon"
-                        className="map__image"
-                        src="/assets/icons/glass/ic_glass_bag.png"
-                      />
-                    }
-                  /> */}
                 </Grid>
 
                 {/* !=========== HEADER SECTION START ===========! */}

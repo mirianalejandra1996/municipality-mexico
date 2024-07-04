@@ -11,7 +11,7 @@ export default function DelegatesPeriod({ title, icon, sx, ...other }) {
       spacing={3}
       sx={{
         p: 1,
-        backgroundColor: '#E6E7E8',
+        // backgroundColor: '#E6E7E8',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         ...sx,
       }}
