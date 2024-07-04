@@ -31,6 +31,7 @@ import DelegatesWinnerCard from '../delegates-winner-card';
 // import DelegatesWinnerInfo from '../delegates-winner-info';
 import DelegatesSocialDemands from '../delegates-social-demands';
 import DelegatesNumeraliaCard from '../delegates-numeralia-card';
+import DelegatesComparativeByCandidacy from '../delegates-delegates-period';
 
 // {/* <DelegatesWinnerInfo
 //             sx={{
@@ -95,19 +96,6 @@ export default function SecondSection() {
                       />
                     }
                   />
-
-                  {/* <DelegatesWinnerInfo
-                    sx={{
-                      borderLeft: '1px solid',
-                      borderColor: '#BBBDC0',
-                      height: '100%',
-                    }}
-                    direction="column"
-                    colorSection="#808285"
-                    quantity="2,258"
-                    title="Vivienda"
-                    percentageText="Viviendas con hacinamiento"
-                  /> */}
                 </Grid>
               </Grid>
             </Box>
@@ -181,13 +169,24 @@ export default function SecondSection() {
                 <Grid item xs={12} md={9}>
                   {/* <Box sx={{ backgroundColor: 'lightblue', height: '80vh' }}> */}
                   <Box sx={{ backgroundColor: 'lightblue', height: '50vh' }}>
-                    <div className="delegate__container">
+                    {/* <div className="delegate__container">
                       <DelegatesBullet
                         align="right"
                         title="Delegado"
                         description="Ricardo López Priego"
                       />
-                    </div>
+                    </div> */}
+
+                    <DelegatesComparativeByCandidacy
+                      title="Seguridad"
+                      icon={
+                        <img
+                          alt="icon"
+                          className="map__image"
+                          src="/assets/icons/glass/ic_glass_bag.png"
+                        />
+                      }
+                    />
                   </Box>
                 </Grid>
 
