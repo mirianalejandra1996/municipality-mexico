@@ -89,47 +89,45 @@ export default function DelegatesComparativeChart({ title, subheader, ...other }
       annotations: {
         yaxis: [
           {
-            y: 10,
+            y: 30,
             borderColor: 'transparent',
             label: {
               borderColor: 'transparent',
               style: {
                 color: '#fff',
-                fontSize: '20px',
                 background: '#941727',
               },
               text: '46.4%',
-              offsetX: -455,
+              offsetX: -20,
               // position: 'right'
             }
           },
           {
-            y: 10,
+            y: 40,
             borderColor: 'transparent',
             label: {
               borderColor: 'transparent',
               style: {
-                fontSize: '20px',
                 color: '#fff',
                 background: '#404041',
               },
               text: '60%',
-              offsetX: -270,
+              offsetX: -20,
+              position: 'right'
             }
           },
           {
-            y: 10,
+            y: 50,
             borderColor: 'transparent',
             label: {
               borderColor: 'transparent',
               style: {
-                fontSize: '20px',
                 color: '#fff',
                 background: '#939598',
               },
               text: '75%',
-              offsetX: -75,
-              position: 'right'
+              offsetX: -20,
+              // position: 'right'
             }
           }
 
