@@ -101,14 +101,16 @@ export default function FirstSection() {
 
           {/* !=========== COLUMN RIGHT START ===========! */}
           <Grid item xs={12} md={9}>
-            <Box sx={{ backgroundColor: 'pink', height: '100vh' }}>
-              {/* !=========== UPPER SECTION START ===========! */}
+          {/* <Box sx={{ backgroundColor: 'pink', height: '100vh' }}> */}
+          <Box sx={{ height: '100vh' }}>
+          {/* !=========== UPPER SECTION START ===========! */}
               <Grid item container spacing={3}>
                 {/* !=========== HEADER SECTION START ===========! */}
                 <Grid item xs={12} md={9}>
                   <Box
                     className="header__main-container"
-                    sx={{ backgroundColor: 'lightblue', height: '45vh' }}
+                    // sx={{ backgroundColor: 'lightblue', height: '45vh' }}
+                    sx={{  height: '45vh' }}
                   >
                     {/* This component is absolute */}
                     <DelegatesHeader />
@@ -168,7 +170,8 @@ export default function FirstSection() {
                 item
                 container
                 spacing={3}
-                sx={{ backgroundColor: '#20EEC9', position: 'relative' }}
+                // sx={{ backgroundColor: '#20EEC9', position: 'relative' }}
+                sx={{  position: 'relative' }}
               >
                 <Grid
                   item
@@ -196,7 +199,7 @@ export default function FirstSection() {
                 </Grid> */}
 
                 <Grid xs={12} md={8}>
-                <Box sx={{ backgroundColor: 'lightblue', height: '90vh' }}>
+                <Box sx={{  height: '90vh' }}>
 
                   <DelegatesPoverty
                     sx={{ height: '100%' }}
@@ -215,7 +218,7 @@ export default function FirstSection() {
                 <Grid item xs={12} md={4}>
                   <Box
                     sx={{
-                      backgroundColor: 'lightblue',
+                      // backgroundColor: 'lightblue',
                       height: '90vh',
                       display: 'flex',
                       flexDirection: 'column',

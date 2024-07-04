@@ -32,7 +32,8 @@ export default function DelegatesPoverty({ title, icon, sx, ...other }) {
           <DelegatesPovertyLevel />
         </Grid>
 
-        <Grid sx={{ backgroundColor: 'pink', height: '50%' }}>
+        {/* <Grid sx={{ backgroundColor: 'pink', height: '50%' }}> */}
+        <Grid sx={{ height: '50%' }}>
           <DelegatesPovertyLevel />
         </Grid>
       </Grid>
